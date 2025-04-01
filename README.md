@@ -1,7 +1,7 @@
 np# Faculty Management System
 
 ## Overview
-The **Faculty Management System** is designed to streamline departmental tasks, enhance communication, and improve resource availability within educational institutions. This comprehensive solution integrates Admin, Faculty, and Student modules to centralize management, academic record-keeping, and resource sharing.
+The **University Department Information System** is designed to streamline departmental tasks, enhance communication, and improve resource availability within educational institutions. This comprehensive solution integrates Admin, Faculty, and Student modules to centralize management, academic record-keeping, and resource sharing.
 
 ## Features
 ### Admin Module
