@@ -1,3 +1,3 @@
 export const mailgunApi = () => {
-    return "add apikey here";
-  };
+  return process.env.MAILGUN_API_KEY;
+};
