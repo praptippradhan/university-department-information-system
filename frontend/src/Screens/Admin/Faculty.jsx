@@ -27,7 +27,6 @@ const Faculty = () => {
     lastName: "",
     email: "",
     phoneNumber: "",
-    // department: "",
     gender: "",
     experience: "",
     post: "",
@@ -35,23 +34,6 @@ const Faculty = () => {
   });
   const [id, setId] = useState();
   const [search, setSearch] = useState();
-  // const getBranchData = () => {
-  //   const headers = {
-  //     "Content-Type": "application/json",
-  //   };
-  //   axios
-  //     .get(`${baseApiURL()}/branch/getBranch`, { headers })
-  //     .then((response) => {
-  //       if (response.data.success) {
-  //         setBranch(response.data.branches);
-  //       } else {
-  //         toast.error(response.data.message);
-  //       }
-  //     })
-  //     .catch((error) => {
-  //       console.error(error);
-  //     });
-  // };
 
   useEffect(() => {
     const uploadFileToStorage = async (file) => {
@@ -693,6 +675,7 @@ const Faculty = () => {
                   hidden
                   type="file"
                   id="file"
+                  accept="image/*"
                   onChange={(e) => setFile(e.target.files[0])}
                 />
               </div>
