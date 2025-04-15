@@ -105,21 +105,29 @@ function Attendance() {
         <div className="w-full flex flex-col justify-center items-center">
           <p className="mb-4 text-xl font-medium">Select Class For Attendance</p>
           <div className="w-full flex justify-center items-center">
-            <select
-              name="class name"
-              id="class"
-              className="px-2 ml-40 bg-blue-50 py-3 rounded-sm text-base w-[40%] accent-blue-700 mt-4"
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-            >
-              <option defaultValue>-- Select Class --</option>
-              <option value="BE-I">BE-I</option>
-              <option value="BE-II">BE-II</option>
-              <option value="BE-III">BE-III</option>
-              <option value="BE-IV">BE-IV</option>
-              <option value="MCA-I">MCA-I</option>
-              <option value="MCA-II">MCA-II</option>
-            </select>
+          <select
+  name="branch"
+  id="branch"
+  className="px-2 ml-40 bg-blue-50 py-3 rounded-sm text-base w-[40%] accent-blue-700 mt-4"
+  value={search}
+  onChange={(e) => setSearch(e.target.value)}
+>
+  <option defaultValue>-- Select Branch --</option>
+  <option value="Civil Engineering">Civil Engineering</option>
+  <option value="Computer Science Engineering">Computer Science Engineering</option>
+  <option value="Electrical Engineering">Electrical Engineering</option>
+  <option value="Electronics and Communication Engineering">Electronics and Communication Engineering</option>
+  <option value="Mechanical Engineering">Mechanical Engineering</option>
+  <option value="Metallurgical and Materials Engineering">Metallurgical and Materials Engineering</option>
+  <option value="Chemical Engineering">Chemical Engineering</option>
+  <option value="Ceramic Engineering">Ceramic Engineering</option>
+  <option value="Mining Engineering">Mining Engineering</option>
+  <option value="Biotechnology">Biotechnology</option>
+  <option value="Biomedical Engineering">Biomedical Engineering</option>
+  <option value="Food Process Engineering">Food Process Engineering</option>
+  <option value="Industrial Design">Industrial Design</option>
+</select>
+
             <button
               className="relative ml-3 mt-3 flex justify-center items-center border-2 border-red-500 px-3 py-2 rounded text-red-500"
               onClick={searchStudentHandler}
